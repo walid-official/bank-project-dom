@@ -15,6 +15,4 @@ document.getElementById('login-btn')
         }else{
             window.location.href = './dashboard.html';
         }
-
-
     });

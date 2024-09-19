@@ -13,7 +13,7 @@
           <!-- Amount Section Start -->
             <div class="flex justify-between py-4">
               <div class="">
-                <h2 class="font-bold text-2xl">$<span>4000</span></h2>
+                <h2 class="font-bold text-2xl">$<span id="amount">4000</span></h2>
                 <h3>Available Balance</h3>
               </div>
               <div class="">
@@ -24,15 +24,15 @@
            <hr>
            <!-- Button Section Start -->
             <div class="grid grid-cols-3 gap-4 pt-4">
-              <button class="btn">Cash OUt</button>
               <button class="btn">Add Money</button>
+              <button class="btn">Cash Out</button>
               <button class="btn">Transfer Money</button>
               <button class="btn">Get Bonus</button>
               <button class="btn">Pay Bill</button>
               <button class="btn">Transaction</button>
             </div>
            <!-- Button Section End -->
-            <!-- Form section Start -->
+            <!-- Add Money section Start -->
             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
                 <form class="card-body">
                     <div class="">
@@ -42,24 +42,80 @@
                     <label class="label">
                       <span class="label-text">Add Money</span>
                     </label>
-                    <input id="" type="text" placeholder="Add Money" class="input input-bordered" required />
+                    <input id="add-money-input" type="text" placeholder="Add Money" class="input input-bordered" required />
                   </div>
                   <div class="form-control">
                     <label class="label">
                       <span class="label-text">Pin Number</span>
                     </label>
-                    <input id="" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                    <input id="add-money-pin" type="password" placeholder="Pin Number" class="input input-bordered" required />
                     <label class="label">
                       <a href="#" class="label-text-alt link link-hover">Forgot pin</a>
                     </label>
                   </div>
                   <div class="form-control mt-6">
-                    <button id="loginBtn" class="btn btn-primary">Add Money</button>
+                    <button id="add-money" class="btn btn-primary">Add Money</button>
                   </div>
                 </form>
               </div>
-              <!-- Form section End -->
+              <!-- Add Money section End -->
+               <!-- Cash Out Page Start-->
+               <div id="container-cash-out" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+                <form class="card-body">
+                  <div class="">
+                    <h1 class="text-center text-2xl font-bold mb-6">Cash Out</h1>
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Cash Out</span>
+                    </label>
+                    <input id="cash-input" type="text" placeholder="Cash Out" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="cash-pin" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot pin</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cashout-btn" class="btn btn-primary">Cash Out</button>
+                  </div>
+                </form>
+              </div>
+               <!-- Cash Out Page End-->
+                <!-- Transfer Money Page Start -->
+                <div id="container-transfer-money" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+                  <form class="card-body">
+                    <div class="">
+                      <h1 class="text-center text-2xl font-bold mb-6">Transfer Money</h1>
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Transfer Money</span>
+                      </label>
+                      <input id="transfer-input" type="text" placeholder="Transfer Money" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input id="transfer-pin" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot pin</a>
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="transfer-btn" class="btn btn-primary">Transfer Money</button>
+                    </div>
+                <!-- Transfer Money Page End -->
         </div>
     </main>
+
+    <script src="js/function.js"></script>
+    <script src="js/deshboard.js"></script>
+    <script src="js/cashout.js"></script>
 </body>
 </html>
