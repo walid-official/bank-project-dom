@@ -24,16 +24,16 @@
            <hr>
            <!-- Button Section Start -->
             <div class="grid grid-cols-3 gap-4 pt-4">
-              <button class="btn">Add Money</button>
-              <button class="btn">Cash Out</button>
-              <button class="btn">Transfer Money</button>
-              <button class="btn">Get Bonus</button>
-              <button class="btn">Pay Bill</button>
-              <button class="btn">Transaction</button>
+              <button id="add-money" class="btn">Add Money</button>
+              <button id="cash-out" class="btn">Cash Out</button>
+              <button id="transfer-money" class="btn">Transfer Money</button>
+              <button id="get-bonus" class="btn">Get Bonus</button>
+              <button id="pay-bill" class="btn">Pay Bill</button>
+              <button id="transaction" class="btn">Transaction</button>
             </div>
            <!-- Button Section End -->
             <!-- Add Money section Start -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+            <div id="container-add-money" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
                 <form class="card-body">
                     <div class="">
                         <h1 class="text-center text-2xl font-bold mb-6">Add Money</h1>
@@ -54,13 +54,13 @@
                     </label>
                   </div>
                   <div class="form-control mt-6">
-                    <button id="add-money" class="btn btn-primary">Add Money</button>
+                    <button id="add-money-btn" class="btn btn-primary">Add Money</button>
                   </div>
                 </form>
               </div>
               <!-- Add Money section End -->
                <!-- Cash Out Page Start-->
-               <div id="container-cash-out" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+               <div id="container-cash-out" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
                 <form class="card-body">
                   <div class="">
                     <h1 class="text-center text-2xl font-bold mb-6">Cash Out</h1>
@@ -87,7 +87,7 @@
               </div>
                <!-- Cash Out Page End-->
                 <!-- Transfer Money Page Start -->
-                <div id="container-transfer-money" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+                <div id="container-transfer-money" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
                   <form class="card-body">
                     <div class="">
                       <h1 class="text-center text-2xl font-bold mb-6">Transfer Money</h1>
