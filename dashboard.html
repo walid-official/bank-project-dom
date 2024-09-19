@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="main-container">
+        <div class="artboard phone-2 border bg-black mx-auto mt-[30px] px-6">
+          <!-- Amount Section Start -->
+            <div class="flex justify-between py-4">
+              <div class="">
+                <h2 class="font-bold text-2xl">$<span>4000</span></h2>
+                <h3>Available Balance</h3>
+              </div>
+              <div class="">
+                <button class="btn" id="log-out">Log-out</button>
+              </div>
+            </div>
+          <!-- Amount Section End -->
+           <!--  -->
+            <!-- Form section Start -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-24">
+                <form class="card-body">
+                    <div class="">
+                        <h1 class="text-center text-2xl font-bold mb-6">Welcome To Payoo</h1>
+                    </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Phone Number</span>
+                    </label>
+                    <input id="" type="text" placeholder="Phone Number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input id="" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot pin</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="loginBtn" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+              <!-- Form section End -->
+        </div>
+    </main>
+</body>
+</html>
