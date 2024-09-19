@@ -7,7 +7,11 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     let amountPresent =  getTextFieldValueById('amount');
     if(addMoneyPin === 1234){
         allAmount.innerText = amountPresent + addMoneyInput;
-       
+        const transactionContent = document.getElementById('transaction-content');
+        let p = document.createElement('p');
+        p.classList.add("py-2")
+        p.innerText = `Add Money Transaction ${addMoneyInput} and available balance is ${allAmount.innerText}`
+        transactionContent.appendChild(p)
     }else{
         alert('Write 1234 as a Pin Number');
     }
@@ -30,3 +34,8 @@ document.getElementById('transfer-money')
     .addEventListener('click', function(){
         showSectionById('container-transfer-money');
 })
+
+document.getElementById('transaction')
+    .addEventListener("click",function(){
+        showSectionById('transaction-container');
+});
